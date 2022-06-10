@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainRoom/ParthenonScene.unity
     guid: b6e10d56cb3bf8040afea4cdf0780642
+  - enabled: 1
+    path: Assets/Scenes/ChooseTimeline/ChooseTimeline.unity
+    guid: 9b4ce434c06a568479456e30da775d94
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
