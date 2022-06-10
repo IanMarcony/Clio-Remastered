@@ -10685,6 +10685,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoInteractPanel: {fileID: 1710502369}
   clickButton: {fileID: 1116210227}
+  timelineId: 1
 --- !u!1 &1036196309
 GameObject:
   m_ObjectHideFlags: 0
@@ -14745,6 +14746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoInteractPanel: {fileID: 2000414817}
   clickButton: {fileID: 1116210227}
+  timelineId: 2
 --- !u!1 &1493768473
 GameObject:
   m_ObjectHideFlags: 0
@@ -21579,6 +21581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infoInteractPanel: {fileID: 469407444}
   clickButton: {fileID: 1116210227}
+  timelineId: 0
 --- !u!114 &2306507196105086532 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 171867868446175486, guid: 522fa7d0daf24ca478b54c1ae3264177,
