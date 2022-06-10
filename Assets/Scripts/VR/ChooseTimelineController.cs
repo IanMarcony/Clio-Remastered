@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChooseTimelineController : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class ChooseTimelineController : MonoBehaviour
 
     [SerializeField]
     private AudioSource clickButton;
+
+    [SerializeField]
+    private int timelineId;
 
     private void Start()
     {
@@ -31,7 +35,8 @@ public class ChooseTimelineController : MonoBehaviour
     public void OnPointerClick()
     {
         clickButton.Play();
-        print("Mudou de cena");
+        PlayerPrefs.SetInt("TimelineID", timelineId);
+        SceneManager.LoadScene("ChooseTimeline");
     }
 
  

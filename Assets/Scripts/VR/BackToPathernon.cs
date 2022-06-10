@@ -1,16 +1,15 @@
-using System;
 using System.Collections;
-using UnityEngine.EventSystems;
-using UnityEngine.Events;
+using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-
-public class ObjectController : MonoBehaviour
+public class BackToPathernon : MonoBehaviour
 {
     [SerializeField]
     private GameObject infoInteractPanel;
 
-    public EventTrigger.TriggerEvent OnPointerClickCallback;
+    [SerializeField]
+    private AudioSource clickButton;
 
     private void Start()
     {
@@ -31,8 +30,7 @@ public class ObjectController : MonoBehaviour
 
     public void OnPointerClick()
     {
-        BaseEventData eventData= new BaseEventData(EventSystem.current);
-        eventData.selectedObject = this.gameObject;
-        OnPointerClickCallback.Invoke(eventData);
+        clickButton.Play();
+        SceneManager.LoadScene("ParthenonScene");
     }
 }
